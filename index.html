@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greenhouse of Remembrance</title>
+  
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-50 text-gray-900 font-sans">
+
+  <!-- HEADER / NAVBAR -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <a href="#" class="flex items-center gap-3">
+        <img src="assets/images/logo.png" alt="Greenhouse of Remembrance logo" class="w-12 h-12 rounded">
+        <span class="font-semibold text-lg">Greenhouse of Remembrance</span>
+      </a>
+
+      <nav class="hidden md:flex gap-6 font-medium">
+        <a href="#home" class="hover:text-green-800">Home</a>
+        <a href="#welcome" class="hover:text-green-800">Welcome</a>
+        <a href="#sustainable-plants" class="hover:text-green-800">Sustainability</a>
+        <a href="#services" class="hover:text-green-800">Services</a>
+        <a href="#blog" class="hover:text-green-800">Blog</a>
+        <a href="#testimonials" class="hover:text-green-800">Testimonials</a>
+        <a href="#contact" class="hover:text-green-800">Book Online</a>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button id="hamburger" class="md:hidden flex flex-col gap-1 w-6 h-6">
+        <span class="block h-0.5 bg-gray-900"></span>
+        <span class="block h-0.5 bg-gray-900"></span>
+        <span class="block h-0.5 bg-gray-900"></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav id="menu" class="hidden flex-col gap-4 p-4 bg-white md:hidden">
+      <a href="#home" class="hover:text-green-800">Home</a>
+      <a href="#welcome" class="hover:text-green-800">Welcome</a>
+      <a href="#sustainable-plants" class="hover:text-green-800">Sustainability</a>
+      <a href="#services" class="hover:text-green-800">Services</a>
+      <a href="#blog" class="hover:text-green-800">Blog</a>
+      <a href="#testimonials" class="hover:text-green-800">Testimonials</a>
+      <a href="#contact" class="hover:text-green-800">Book Online</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Nurturing plants in memory</h1>
+      <p class="text-gray-700 mb-6">Caring for the plants of your loved ones, keeping their memory alive in a living greenhouse.</p>
+      <div class="flex gap-4">
+        <a href="#services" class="bg-green-700 text-white px-6 py-3 rounded hover:bg-green-800 transition">Explore Services</a>
+        <a href="#contact" class="border border-green-700 text-green-700 px-6 py-3 rounded hover:bg-green-100 transition">Book Online</a>
+      </div>
+    </div>
+    <div>
+      <img src="assets/images/hero.jpg" alt="Greenhouse with plants and sunlight" class="rounded shadow-lg object-cover w-full h-80 md:h-full">
+    </div>
+  </section>
+
+  <!-- WELCOME -->
+  <section id="welcome" class="max-w-6xl mx-auto px-4 py-12 text-center">
+    <h2 class="text-3xl font-semibold mb-4">Welcome</h2>
+    <p class="text-gray-700 max-w-3xl mx-auto">Greenhouse of Remembrance is dedicated to nurturing plants of departed loved ones, helping families to honor memories while promoting sustainable plant care and community connection.</p>
+  </section>
+
+  <!-- SUSTAINABLE PLANTS SECTION -->
+<section id="sustainable-plants" class="max-w-6xl mx-auto px-4 py-16 bg-green-100 rounded-lg mt-12">
+  <div class="grid md:grid-cols-2 gap-8 items-center">
+    
+    <!-- Text content -->
+    <div class="flex flex-col gap-4">
+      <h2 class="text-3xl font-semibold">Keep Your Plants Sustainable</h2>
+      <p class="text-gray-700">
+        Choosing the right houseplants for your region not only keeps your home green and healthy,
+        but also helps protect the environment. Some plants can be invasive or unsustainable outside
+        their natural habitat.
+      </p>
+      <p class="text-gray-700 italic">
+        Interesting fact: Did you know that some common indoor plants, if not cared for properly,
+        can drain excessive water resources or harm local ecosystems if planted outdoors?
+      </p>
+      
+      <!-- CTA button -->
+      <a href="sustainable.html" class="mt-4 bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition w-max">
+        Check Your Plants!
+      </a>
+    </div>
+    
+    <!-- Image -->
+    <div>
+      <img src="assets/images/sustainable-plant.jpg" alt="Houseplants in arrangement" class="rounded shadow-lg object-cover w-full h-64 md:h-full">
+    </div>
+    
+  </div>
+</section>
+
+
+  <!-- SERVICES -->
+  <section id="services" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-semibold text-center mb-8">Services</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Service 1 -->
+      <div class="bg-white rounded-lg shadow overflow-hidden flex flex-col">
+        <img src="assets/images/service-plantcare.jpg" alt="Potted plant being watered" class="h-48 w-full object-cover">
+        <div class="p-4 flex flex-col flex-1 justify-between">
+          <div>
+            <h3 class="font-semibold text-xl mb-2">Plant Relocation Service</h3>
+            <p class="text-gray-600">Regular tending and watering for memorial plants, delivered with respect.</p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <span class="font-bold text-green-800">€50</span>
+            <a href="#contact" class="bg-green-700 text-white px-3 py-1 rounded hover:bg-green-800 transition">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Service 2 -->
+      <div class="bg-white rounded-lg shadow overflow-hidden flex flex-col">
+        <img src="assets/images/service-workshop.jpg" alt="Workshop" class="h-48 w-full object-cover">
+        <div class="p-4 flex flex-col flex-1 justify-between">
+          <div>
+            <h3 class="font-semibold text-xl mb-2">Sustainable Plant Workshop</h3>
+            <p class="text-gray-600">Hands-on sessions to learn caring techniques that celebrate a life.</p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <span class="font-bold text-green-800">€75</span>
+            <a href="#contact" class="bg-green-700 text-white px-3 py-1 rounded hover:bg-green-800 transition">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Service 3 -->
+      <div class="bg-white rounded-lg shadow overflow-hidden flex flex-col">
+        <img src="assets/images/service-arrangement.jpg" alt="Funeral arrangement with foliage" class="h-48 w-full object-cover">
+        <div class="p-4 flex flex-col flex-1 justify-between">
+          <div>
+            <h3 class="font-semibold text-xl mb-2">Funeral Arrangement</h3>
+            <p class="text-gray-600">Custom arrangements for memorials and home tributes.</p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <span class="font-bold text-green-800">€100</span>
+            <a href="#contact" class="bg-green-700 text-white px-3 py-1 rounded hover:bg-green-800 transition">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-semibold text-center mb-8">Our Insights</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Blog 1 -->
+      <div class="bg-white rounded-lg shadow overflow-hidden flex flex-col">
+        <img src="assets/images/blog-1.jpg" alt="Sustainable plant bed" class="h-40 w-full object-cover">
+        <div class="p-4 flex flex-col flex-1 justify-between">
+          <h3 class="font-semibold text-lg mb-2">Sustainable Plant Care Tips for Memorial Gardens</h3>
+          <p class="text-gray-600 mb-2">Small changes that keep memorial plants thriving all year round.</p>
+          <a href="#" class="text-green-700 font-semibold hover:underline">Read more →</a>
+        </div>
+      </div>
+      <!-- Blog 2 -->
+      <div class="bg-white rounded-lg shadow overflow-hidden flex flex-col">
+        <img src="assets/images/blog-2.jpg" alt="Care guide for houseplants" class="h-40 w-full object-cover">
+        <div class="p-4 flex flex-col flex-1 justify-between">
+          <h3 class="font-semibold text-lg mb-2">Caring for Plants: Honouring Loved Ones Through Nature</h3>
+          <p class="text-gray-600 mb-2">How plant care becomes a living remembrance ritual.</p>
+          <a href="#" class="text-green-700 font-semibold hover:underline">Read more →</a>
+        </div>
+      </div>
+      <!-- Blog 3 -->
+      <div class="bg-white rounded-lg shadow overflow-hidden flex flex-col">
+        <img src="assets/images/blog-3.jpg" alt="Funeral plant arrangement at home" class="h-40 w-full object-cover">
+        <div class="p-4 flex flex-col flex-1 justify-between">
+          <h3 class="font-semibold text-lg mb-2">Beautiful Funeral Plant Arrangements</h3>
+          <p class="text-gray-600 mb-2">How we create calm, respectful arrangements using seasonal foliage.</p>
+          <a href="#" class="text-green-700 font-semibold hover:underline">Read more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-semibold text-center mb-8">Testimonials</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white rounded-lg shadow p-6 flex gap-4">
+        <img src="assets/images/testimonial-emily.jpg" alt="Portrait: Emily Johnson" class="w-20 h-20 rounded-full object-cover">
+        <div>
+          <p class="text-gray-600 italic">"The plant care service helped me keep my partner's memory alive in the gentlest way."</p>
+          <p class="mt-2 font-semibold">— Emily Johnson</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6 flex gap-4">
+        <img src="assets/images/testimonial-oliver.jpg" alt="Portrait: Oliver" class="w-20 h-20 rounded-full object-cover">
+        <div>
+          <p class="text-gray-600 italic">"Beautiful arrangements and thoughtful service. Highly recommended."</p>
+          <p class="mt-2 font-semibold">— Oliver M.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / BOOK -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-semibold text-center mb-8">Book Online / Contact</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Form -->
+      <form class="bg-white rounded-lg shadow p-6 flex flex-col gap-4">
+        <label class="flex flex-col">
+          Name
+          <input type="text" placeholder="Your name" class="border rounded px-3 py-2 mt-1" required>
+        </label>
+        <label class="flex flex-col">
+          Email
+          <input type="email" placeholder="you@example.com" class="border rounded px-3 py-2 mt-1" required>
+        </label>
+        <label class="flex flex-col">
+          Service
+          <select class="border rounded px-3 py-2 mt-1">
+            <option>Plant Relocation — €50</option>
+            <option>Plant Care Workshop — €75</option>
+            <option>Funeral Arrangement — €100</option>
+          </select>
+        </label>
+        <label class="flex flex-col">
+          Message
+          <textarea rows="4" placeholder="Tell us about your needs..." class="border rounded px-3 py-2 mt-1"></textarea>
+        </label>
+        <div class="flex gap-4">
+          <button type="submit" class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition">Request Booking</button>
+          <button type="reset" class="border border-green-700 text-green-700 px-4 py-2 rounded hover:bg-green-100 transition">Reset</button>
+        </div>
+      </form>
+
+      <!-- Contact info -->
+      <aside class="bg-white rounded-lg shadow p-6 flex flex-col gap-4">
+        <h3 class="text-xl font-semibold">Contact</h3>
+        <p>Växjö, Sweden</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: hello@greenhouse-remembrance.example</p>
+        <div class="flex gap-3 mt-4">
+          <a href="#"><img src="assets/images/icon-facebook.png" alt="Facebook icon" class="w-8 h-8"></a>
+          <a href="#"><img src="assets/images/icon-instagram.png" alt="Instagram icon" class="w-8 h-8"></a>
+          <a href="#"><img src="assets/images/icon-x.png" alt="X icon" class="w-8 h-8"></a>
+          <a href="#"><img src="assets/images/icon-tiktok.png" alt="TikTok icon" class="w-8 h-8"></a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t mt-12">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-center text-gray-600 text-sm">
+      <p>© <span id="year"></span> Greenhouse of Remembrance - Test Site</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    // Mobile menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    // Dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
